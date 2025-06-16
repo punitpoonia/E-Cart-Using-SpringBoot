@@ -1,0 +1,18 @@
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: product_service
+#          uri: http://localhost:9091  # The product service URL
+#          predicates:
+#            - Path=/products/**  # All requests that start with /products will be forwarded to product service
+#
+#        - id: cart_service
+#          uri: http://localhost:9092  # The cart service URL
+#          predicates:
+#            - Path=/cart/**  # All requests that start with /cart will be forwarded to cart service
+#
+#        - id: user_service
+#          uri: http://localhost:9096  # The user service URL
+#          predicates:
+#            - Path=/users/**  # All requests that start with /users will be forwarded to user service
